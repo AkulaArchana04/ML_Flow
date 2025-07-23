@@ -1,6 +1,6 @@
 pandas
 mlflow
 flask
-pip install -U scikit-learn==1.7.1
+scikit-learn==1.7.1
 joblib
 gunicorn
