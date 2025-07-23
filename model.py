@@ -37,5 +37,7 @@ x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.1, random_
 # Train the model inside an MLflow run
 with mlflow.start_run():
     model.fit(x_train, y_train)
+    # your model training script
     joblib.dump(model, "airbnb.pkl")
+
     print("✅ Model trained and saved as airbnb.pkl")
